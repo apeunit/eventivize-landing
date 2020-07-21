@@ -11,7 +11,7 @@ const HeaderWrapper = Wrapper.withComponent("header");
 
 
 const Header = props => {
-  
+
   const Logo = styled.nav(({ theme }) => [
     tw` w-10 h-10 border-current border-4 rounded-full`,
   ]);
@@ -24,21 +24,21 @@ const Header = props => {
     `
   ]);
   return (
-  <HeaderWrapper>
- <Container>
-    <Navbar>
-      <Logo/>
-      <ul>
-          <li>
-          <a href="#">About</a>
-          </li>
-          <li><a href="#">Blog</a></li>
+    <HeaderWrapper>
+      <Container>
+        <Navbar>
+          <Logo />
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li><a href="https://blog.apeunit.com/from-maracaibo-to-berlin-remixing-the-music-industry-with-blockchain/">Blog</a></li>
           </ul>
         </Navbar>
-   
-    
-    </Container>
-  </HeaderWrapper>);
+
+
+      </Container>
+    </HeaderWrapper>);
 };
 
 export default Header;

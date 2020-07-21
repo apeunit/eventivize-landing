@@ -13,7 +13,7 @@ const Footer = (props) => {
         <Contacts>
           <ul>
             <li>
-              <a href="office@eventivize.com">office@eventivize.com</a>
+              <a href="mailto:eventivize@apeunit.com">eventivize@apeunit.com</a>
             </li>
             <li>+49 30 306 490 10</li>
           </ul>
