@@ -17,7 +17,7 @@ const Footer = (props) => {
             </li>
             <li>+49 30 306 490 10</li>
             <li><br/>
-            <a href="./impressium">Imprint </a>
+            <a href="./Impressum">Imprint </a>
             </li>
             
           </ul>
