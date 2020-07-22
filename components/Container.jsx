@@ -1,5 +1,6 @@
-import tw, { styled, css } from "twin.macro";
 
+
+import tw, { styled, css } from "twin.macro";
 const Container = styled.div(({ isSmall, theme }) => [
   tw`xl:max-w-contained mx-auto`,
   css`
@@ -8,3 +9,5 @@ const Container = styled.div(({ isSmall, theme }) => [
 ]);
 
 export default Container;
+
+

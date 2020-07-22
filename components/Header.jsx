@@ -30,7 +30,7 @@ const Header = props => {
           <Logo />
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="./">About</a>
             </li>
             <li><a href="https://blog.apeunit.com/from-maracaibo-to-berlin-remixing-the-music-industry-with-blockchain/">Blog</a></li>
           </ul>

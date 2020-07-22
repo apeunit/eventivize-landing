@@ -16,6 +16,10 @@ const Footer = (props) => {
               <a href="mailto:eventivize@apeunit.com">eventivize@apeunit.com</a>
             </li>
             <li>+49 30 306 490 10</li>
+            <li><br/>
+            <a href="./impressium">Imprint </a>
+            </li>
+            
           </ul>
         </Contacts>
       </Container>
