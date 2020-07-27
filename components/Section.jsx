@@ -8,8 +8,11 @@ const VerticalSection = (props) => {
 };
 
 const HorizontalSection = (props) => {
-  const colLayout = tw`lg:w-1/3 mb-6`;
-  return <Grid columns={colLayout} {...props} />;
+  const colLayout = tw`lg:w-1/2 mb-6`;
+  return (
+    <Grid columns={colLayout} {...props} />
+   
+  );
 };
 
 const SectionWapper = styled.section(({ theme }) => [tw`mb-u16 xl:mb-64`]);

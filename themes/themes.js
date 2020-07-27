@@ -39,8 +39,47 @@ const greenTheme = {
     highlight: "yellow",
     muted: "gray",
     secondary: []
+  },
+};
+/*
+const myTheme = {
+  colors: {
+    text: "teal",
+    background: "yellow",
+    primary: "green",
+    accent: "indigo",
+    highlight: "yellow",
+    muted: "gray"
+  },
+  colorMode:{
+    text: 900,
+    background: 100,
+    primary: 600,
+    accent: 600,
+    highlight: 400,
+    muted: 200
   }
 };
+
+const myTheme = {
+  colors: {
+    base: "teal",
+    primary: "green",
+    accent: "indigo",
+  },
+  colorMode:{
+    text: 900,
+    background: 100,
+    primary: 600,
+    accent: 600,
+    highlight: 400,
+    muted: 200
+  }
+};
+
+*/
+
+
 
 const classicTheme = {
   typography: {

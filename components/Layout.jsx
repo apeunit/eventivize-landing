@@ -8,6 +8,7 @@ import Footer from "./../components/Footer";
 import Wrapper from "./../components/Wrapper";
 import Container from "./../components/Container";
 import Note from "./Note";
+import Footnote from "./Footnote";
 import Section from "./../components/Section";
 import tw, { styled, css } from "twin.macro";
 
@@ -26,7 +27,7 @@ const textSyles = {
                                       md:text-sans-3`,
   leadText: tw`       font-sans       text-sans-1      leading-sans-tight     font-medium   tracking-tight
                                       md:text-sans-3    `,
-  text:     tw`       font-sans       text-sans-0      leading-sans-snug      font-medium `,
+  text:     tw`       font-sans       text-sans-0      leading-sans-snug      font-medium   tracking-normal`,
   annotation: tw`     font-mono       text-mono--2     leading-mono-tight     font-normal italic tracking-normal`,
   nav: tw`  `,
   meta: tw`  `,
@@ -49,8 +50,17 @@ const Typography = styled.div(({ theme }) => [
     h3 {${textSyles.headlineXl} ${tw` mb-5`}}
     h4 {${textSyles.headline}}
     .annotation *{${textSyles.annotation}}
+    .footnote {${textSyles.text} ${tw` mt-8`}}
     p, h4, ol { ${tw` mb-3 `}}
     p { ${tw` mb-3 max-w-measure`}}
+    p a{
+      ${tw` relative inline-block `}
+      ::before{
+        content:'';
+        ${tw` absolute h-1/2 w-full bg-current bottom-0 ml-1 opacity-25`}   
+      }
+
+    }
     ol {
       counter-reset: ol-counter;
     }
@@ -77,7 +87,8 @@ const Typography = styled.div(({ theme }) => [
 const mdComponents = {
   Brand: (props) => <Brand {...props} />,
   Section: (props) => <Section {...props} />,
-  Note: (props) => <Note {...props} />
+  Note: (props) => <Note {...props} />,
+  Footnote: (props) => <Footnote {...props} />
 };
 //li: props => <Li {...props} />
 export default function Layout({
