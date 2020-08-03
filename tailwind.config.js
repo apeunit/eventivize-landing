@@ -20,7 +20,7 @@ const typeScale = function(n, base) {
 };
 
 //8, 16, 24, 48
-const dividers = [2, 3, 4, 5, 6, 10, 12, 20];
+const dividers = [2, 3, 4, 5, 6, 10, 12, 15, 20];
 
 function generateDividers(dividers) {
   return dividers.reduce((acc, curr) => {
@@ -130,11 +130,16 @@ module.exports = {
     extend: {
       spacing: {
         ...generateScale("u", 1, 66, units),
-        ...generateDividers(dividers)
+        ...generateDividers(dividers),
+        "100":"25rem",
+        "110":"27.5rem",
+        "144":"36rem",
+        "160":"40rem",
+        "200":"50rem"
       },
       fontSize: { ...mergeAll(values(mapObjIndexed(fontSize, typefaces))),
        logoFluid: "19vw" ,
-       logoContained:"12.6rem" 
+       logoContained:"12.6rem"
       },
       lineHeight: mergeAll(values(mapObjIndexed(lineHeight, typefaces))),
       maxWidth: {

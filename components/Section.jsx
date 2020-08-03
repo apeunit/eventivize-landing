@@ -15,7 +15,7 @@ const HorizontalSection = (props) => {
   );
 };
 
-const SectionWapper = styled.section(({ theme }) => [tw`mb-u16 xl:mb-64`]);
+const SectionWapper = styled.section(({ theme }) => [tw`mb-u24 xl:mb-64`]);
 
 const Section = (props) => {
   const { title, note, isVertical, isLeading, ...rest } = props;

@@ -10,6 +10,8 @@ import Container from "./../components/Container";
 import Note from "./Note";
 import Footnote from "./Footnote";
 import Section from "./../components/Section";
+import HandLeft from "./../components/HandLeft";
+import HandRight from "./../components/HandRight";
 import tw, { styled, css } from "twin.macro";
 
 const Main = Wrapper.withComponent("main");
@@ -88,7 +90,9 @@ const mdComponents = {
   Brand: (props) => <Brand {...props} />,
   Section: (props) => <Section {...props} />,
   Note: (props) => <Note {...props} />,
-  Footnote: (props) => <Footnote {...props} />
+  Footnote: (props) => <Footnote {...props} />,
+  HandLeft:(props) => <HandLeft {...props} />,
+  HandRight:(props) => <HandRight {...props} />
 };
 //li: props => <Li {...props} />
 export default function Layout({
