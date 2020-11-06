@@ -7,13 +7,11 @@ const Modal = styled.div(({ theme }) => [
   `,
 ]);
 
-const VideoContainer = styled.div(({ theme }) => [tw`w-3/4 bg-white py-12`]);
+// const VideoContainer = styled.div(({ theme }) => [tw`w-3/4 bg-white py-12 text-center`]);
 
 const CloseButton = styled.button(({ theme }) => [
   tw`w-12 h-12 bg-purple-600 absolute bottom-0 mb-5 rounded-full outline-none focus:outline-none text-center`,
 ]);
-
-const IconContainer = styled.div(({ theme }) => [tw`inline-block`]);
 
 const CloseIcon = () => {
   return (
@@ -49,7 +47,14 @@ const CloseIcon = () => {
 const VideoBanner = ({ onClose }) => {
   return (
     <Modal>
-      <VideoContainer />
+      {/* <VideoContainer> */}
+      <video
+        src="/video/eventivize-walkthrough-video.mp4"
+        width="720"
+        height="576"
+        autoPlay
+      />
+      {/* </VideoContainer> */}
       <CloseButton onClick={() => onClose()}>
         <CloseIcon />
       </CloseButton>
