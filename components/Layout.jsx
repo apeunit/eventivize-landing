@@ -12,7 +12,9 @@ import Footnote from "./Footnote";
 import Section from "./../components/Section";
 import HandLeft from "./../components/HandLeft";
 import HandRight from "./../components/HandRight";
+import VideBanner from './../components/VideoBanner';
 import tw, { styled, css } from "twin.macro";
+import VideoBanner from "./../components/VideoBanner";
 
 const Main = Wrapper.withComponent("main");
 
@@ -92,7 +94,8 @@ const mdComponents = {
   Note: (props) => <Note {...props} />,
   Footnote: (props) => <Footnote {...props} />,
   HandLeft:(props) => <HandLeft {...props} />,
-  HandRight:(props) => <HandRight {...props} />
+  HandRight:(props) => <HandRight {...props} />,
+  VideoBanner:(props) => <VideoBanner {...props} />
 };
 //li: props => <Li {...props} />
 export default function Layout({
