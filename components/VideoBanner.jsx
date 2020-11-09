@@ -4,11 +4,12 @@ import React, { useState } from "react";
 
 import tw, { styled, css } from "twin.macro";
 
+const ButtonContainer = styled.div(({ theme }) => [
+  tw`fixed bottom-0 z-10 mb-10 left-0 w-full`
+]);
+
 const Button = styled.button(({ theme }) => [
-  tw`bg-black fixed bottom-0 mx-auto block px-8 py-4 rounded-full text-white z-10 mb-5 outline-none focus:outline-none`,
-  css`
-    left: 37.5%;
-  `,
+  tw`bg-black mx-auto block px-8 py-4 rounded-full text-white z-10 outline-none focus:outline-none`
 ]);
 
 const Icon = styled.span(({ theme }) => [
@@ -36,7 +37,7 @@ const VideoBanner = (props) => {
   const [showBanner, setShowBanner] = useState(false);
 
   return (
-    <div>
+    <ButtonContainer>
       {showBanner && <VideoPopup onClose={() => setShowBanner(false)} />}
       {!showBanner && (
         <Button onClick={() => setShowBanner(true)}>
@@ -46,7 +47,7 @@ const VideoBanner = (props) => {
           Let's see how it works
         </Button>
       )}
-    </div>
+    </ButtonContainer>
   );
 };
 
