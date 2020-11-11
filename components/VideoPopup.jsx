@@ -1,16 +1,20 @@
 import tw, { styled, css } from "twin.macro";
 
 const Modal = styled.div(({ theme }) => [
-  tw`fixed top-0 h-full w-full z-10 left-0 flex items-center justify-center`,
-  css`
-    background: rgba(0, 0, 0, 0.7);
-  `,
+  tw`fixed top-0 h-full w-full z-10 left-0 flex items-center justify-center`
 ]);
 
+const Overlay = styled.div(({ theme }) => [
+  tw`absolute w-full top-0 h-screen bg-black z-0 opacity-75`
+]);
 // const VideoContainer = styled.div(({ theme }) => [tw`w-3/4 bg-white py-12 text-center`]);
 
 const CloseButton = styled.button(({ theme }) => [
   tw`w-12 h-12 bg-purple-600 absolute bottom-0 mb-5 rounded-full outline-none focus:outline-none text-center`,
+]);
+
+const Video = styled.video(({ theme }) => [
+  tw`relative z-10`,
 ]);
 
 const CloseIcon = () => {
@@ -47,8 +51,8 @@ const CloseIcon = () => {
 const VideoBanner = ({ onClose }) => {
   return (
     <Modal>
-      {/* <VideoContainer> */}
-      <video
+      <Overlay />
+      <Video
         src="/video/eventivize-walkthrough-video.mp4"
         width="720"
         height="576"
