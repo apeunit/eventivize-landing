@@ -1,7 +1,7 @@
 import tw, { styled, css } from "twin.macro";
 
 const Modal = styled.div(({ theme }) => [
-  tw`fixed top-0 h-screen w-full z-10 left-0 flex items-center justify-center`,
+  tw`fixed top-0 h-full w-full z-10 left-0 flex items-center justify-center`,
   css`
     background: rgba(0, 0, 0, 0.7);
   `,
