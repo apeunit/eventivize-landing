@@ -51,7 +51,7 @@ const VideoBanner = ({ onClose }) => {
     <Modal>
       <Overlay />
       <Video
-        src="https://player.vimeo.com/video/479588271"
+        src="https://player.vimeo.com/video/479588271?autoplay=1&loop=1&autopause=0"
         width="640"
         height="360"
         frameborder="0"
