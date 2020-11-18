@@ -1,11 +1,11 @@
 import tw, { styled, css } from "twin.macro";
 
 const Modal = styled.div(({ theme }) => [
-  tw`fixed top-0 h-full w-full z-10 left-0 flex items-center justify-center`
+  tw`fixed top-0 h-full w-full z-10 left-0 flex items-center justify-center`,
 ]);
 
 const Overlay = styled.div(({ theme }) => [
-  tw`absolute w-full top-0 h-screen bg-black z-0 opacity-75`
+  tw`absolute w-full top-0 h-screen bg-black z-0 opacity-75`,
 ]);
 // const VideoContainer = styled.div(({ theme }) => [tw`w-3/4 bg-white py-12 text-center`]);
 
@@ -13,9 +13,7 @@ const CloseButton = styled.button(({ theme }) => [
   tw`w-12 h-12 bg-purple-600 absolute bottom-0 mb-5 rounded-full outline-none focus:outline-none text-center`,
 ]);
 
-const Video = styled.video(({ theme }) => [
-  tw`relative z-10`,
-]);
+const Video = styled.iframe(({ theme }) => [tw`relative z-10 bg-white`]);
 
 const CloseIcon = () => {
   return (
@@ -53,10 +51,12 @@ const VideoBanner = ({ onClose }) => {
     <Modal>
       <Overlay />
       <Video
-        src="/video/eventivize-walkthrough-video.mp4"
-        width="720"
-        height="576"
-        autoPlay
+        src="https://player.vimeo.com/video/479588271?autoplay=1&loop=1&autopause=0"
+        width="640"
+        height="360"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
       />
       {/* </VideoContainer> */}
       <CloseButton onClick={() => onClose()}>
