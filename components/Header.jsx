@@ -33,7 +33,7 @@ const Header = props => {
               <a href="./">About</a>
             </li>
             <li><a href="https://blog.apeunit.com/tag/eventivize/">Blog</a></li>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfIgzj57sQgA2RGiWqnL2l-yNyfQOZb8GJVXCpBTqXhBwFyOQ/viewform/">Join us</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfIgzj57sQgA2RGiWqnL2l-yNyfQOZb8GJVXCpBTqXhBwFyOQ/viewform">Join us</a></li>
 
           </ul>
         </Navbar>
