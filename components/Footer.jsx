@@ -17,6 +17,9 @@ const Footer = (props) => {
             </li>
             <li>+49 30 306 490 10</li>
             <li><br/>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIgzj57sQgA2RGiWqnL2l-yNyfQOZb8GJVXCpBTqXhBwFyOQ/viewform">Join us </a>
+            </li>
+            <li>
             <a href="./Impressum">Imprint </a>
             </li>
             
