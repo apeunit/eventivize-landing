@@ -13,16 +13,15 @@ const Footer = (props) => {
         <Contacts>
           <ul>
             <li>
-              <a href="mailto:eventivize@apeunit.com">eventivize@apeunit.com</a>
-            </li>
-            <li>+49 30 306 490 10</li>
-            <li><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIgzj57sQgA2RGiWqnL2l-yNyfQOZb8GJVXCpBTqXhBwFyOQ/viewform">Join us </a>
+              <a href="mailto:even@apeunit.com">even@apeunit.com</a>
             </li>
             <li>
-            <a href="./Impressum">Imprint </a>
+              <br />
+              <a href="mailto:even@apeunit.com">Join us </a>
             </li>
-            
+            <li>
+              <a href="./Impressum">Imprint </a>
+            </li>
           </ul>
         </Contacts>
       </Container>
