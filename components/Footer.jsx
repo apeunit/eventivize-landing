@@ -13,11 +13,11 @@ const Footer = (props) => {
         <Contacts>
           <ul>
             <li>
-              <a href="mailto:even@apeunit.com">even@apeunit.com</a>
+              <a href="mailto:eventivize@apeunit.com">eventivize@apeunit.com</a>
             </li>
             <li>
               <br />
-              <a href="mailto:even@apeunit.com">Join us </a>
+              <a href="mailto:eventivize@apeunit.com">Join us </a>
             </li>
             <li>
               <a href="./Impressum">Imprint </a>
